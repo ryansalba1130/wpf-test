@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>HelloWorld</AssemblyName>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="..\HelloWorldNetFx\App.xaml" Link="App.xaml" />
+    <Compile Include="..\HelloWorldNetFx\App.xaml.cs" Link="App.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="..\HelloWorldNetFx\MainWindow.xaml" Link="MainWindow.xaml" />
+    <Compile Include="..\HelloWorldNetFx\MainWindow.xaml.cs" Link="MainWindow.xaml.cs" />
+  </ItemGroup>
+
+</Project>
